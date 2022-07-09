@@ -129,4 +129,8 @@ class ItemsController extends Controller
 
         return redirect('admin/items')->with('flash_message', 'Item deleted!');
     }
+
+    public function sample() {
+        return Item::all();
+    }
 }
